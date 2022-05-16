@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Name Pronunciation</title>
+</head>
+<body>
+  <h1 id="tableLabel">Name Pronunciation</h1>
+
+  <p>This component demonstrates pronunciation of names.</p>
+
+  <!--<p *ngIf="!pronunciations"><em>Loading...</em></p>
+
+  <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="pronunciations">
+    <thead>
+      <tr>
+        <th>Play Audio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pronunciation of pronunciations">
+        <td>{{ pronunciation }}</td>
+      </tr>
+    </tbody>
+  </table>-->
+
+  <input type="text" id="Pronunciations" pInputText [(ngModel)]="NamePronunciation.nameText" />
+  <button class="btn btn-primary" (click)="getNamePronunciations()">Pronounce Name</button>
+</body>
+</html>
